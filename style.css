@@ -1,0 +1,75 @@
+body {background: #efefef url(images/frr.png); margin: 0; padding: 0; font: 16px/24px Arial, Tahoma, sans-serif; color:#272727;}
+
+	a{text-decoration: none;}
+		a:hover{transition: all 0.5s;}
+	
+/*Структура сайта*/
+div.mid {width: 1000px; margin: 0 auto;}
+div.header {padding-top: 20px;
+	background: 
+	radial-gradient(rgba(255,255,255,0.2), #141457 150px, transparent 150px) 15% -100px no-repeat; 
+	background-color: #141457; background-size: 400px 400px;}
+div.footer{margin:20px 0; text-align: center; text-transform: uppercase;}
+
+/*Шапка сайта*/
+div.topmenu{float: right; height: 70px; line-height: 70px;}
+div.topmenu a{margin: 0 0 0 10px; color: #1683a3;}
+div.topmenu a:hover{color: #fff;} /*Псевдокласс, цвет наводящего меню*/
+div.afisha {padding: 20px 50px 1px 50px; margin-top: 20px; 
+
+	background: 
+	linear-gradient(90deg,#c16a8a 100px, #a367ba 100px, #a367ba 200px, #2b798f 200px, #2b798f 300px,
+	#76a7ac 300px, #76a7ac 400px, #93ae65 400px,#93ae65 500px, #abb16f 500px)left top repeat-x;   /*Задаем внутренние поля в padding*/
+	background-color:#f2f2f2;
+	/*Прописываем самостоятельно headline*/
+	background-size: 600px 10px;}
+	
+div.afisha img{float:left;} /*Для всех тегов "Афиша", а именно img*/
+div.afisha h3{font-size: 24px; font-weight: normal; text-align: center; color: #830000} /*Для всех тегов "Афиша", а именно h3*/
+div.afisha p{text-align: center;}
+div.afisha a{font-size: 20px; color: #fff; font-weight: bold;
+	background: #b23600; border: 1px solid #862000; padding: 5px 15px;
+	border-radius: 3px; box-shadow: 2px 2px 7px -1px #777; text-shadow:0px 0px 3px #752300;}
+div.afisha a:hover{background: #068bac; border: 1px solid #046b88; text-shadow:0px 0px 3px #034E61;}
+
+/*Главное меню*/
+div.menu{background: #1683a3; border: 1px solid #016c8b; border-leftL none; border-right: none;}
+div.menu ul{margin: 0; padding:0; list-style: none; text-align: center;}
+div.menu ul li {display: inline-block; margin: 5px 50px;}
+div.menu ul li a{color:#fff; text-transform: uppercase; text-shadow: 1px 1px 3px #0b4455;}
+div.menu ul li a:hover{color:#a3e1f3;}
+
+/*Контент сайта*/
+div.fon {background: #fff; border: 1px solid #ccc; border-top: none; padding: 40px;}
+div.fon hr.line {border: none; border-bottom: 1px dashed #ccc; height: 0; margin: 40px 0;}
+div.block {width: 440px; float: left; }
+div.block:nth-of-type(even){width: 440px; float: right;}
+div.block a p{color: #272727;}
+div.anons {background: #f5f5f5; border: 1px solid #ccc; border-radius: 3px; padding: 20px;}
+div.anons:hover {background: #e0eff4; border: 1px solid #bfd5dd; transition: all 1s;}
+div.anons img{box-shadow: 1px 1px 5px #777} /*Тень на картинке*/
+div.anons h3{font-size: 20px; font-weight: normal; margin: 20px 0 10px; padding: 0; color: #01617d; 
+line-height: 20px; }
+div.anons p{text-shadow:1px 1px 0 #fff; }
+div.rek {margin: 40px 0;}
+div.rek  img {border: 1px solid #ccc; border-radius: 3px;}
+
+/*Подвал*/
+div.footer span{margin: 0 20px;}
+
+div.clear{clear: both;}
+
+/*Адаптивный дизайн*/
+@media screen and (max-width: 999px) {
+	div.mid {width: 95%; }
+	div.afisha h3{font-size: 20px;}
+	div.block,div.block:nth-of-type(even) {width: 75%;  float: left; }
+	div.anons img,div.rek  img {width: 100%;}
+	div.anons h3{font-size: 18px;}
+}
+
+@media screen and (max-width: 601px){
+	div.header {text-align: center; background-position: center -150px;}
+	div.topmenu, div.afisha img, div.block{float:none;}
+}
+
